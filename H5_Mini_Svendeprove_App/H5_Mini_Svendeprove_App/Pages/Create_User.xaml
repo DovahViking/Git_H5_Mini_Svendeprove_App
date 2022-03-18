@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="H5_Mini_Svendeprove_App.Pages.Create_User"
+             BackgroundColor="#282323">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="CREATE USER" TextColor="AliceBlue" FontSize="Large" HorizontalTextAlignment="Center"/>
+            <Label Text="Name" TextColor="AliceBlue" FontSize="20" HorizontalTextAlignment="Start" FontAttributes="bold"/>
+            <Entry x:Name="username" Placeholder="Name" BackgroundColor="AliceBlue" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Label Text="Your name can only contain characters from a-z, A-Z, 0-9 and can max contain 12 characters including spaces" TextColor="#D2CFCF" FontSize="Small" HorizontalTextAlignment="Center"/>
+            <Button Text="Continue" WidthRequest="100" TextColor="AliceBlue" BackgroundColor="DarkRed" Clicked="on_button_continue"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

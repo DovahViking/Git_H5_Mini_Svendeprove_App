@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="H5_Mini_Svendeprove_App.Pages.Leaderboards"
+             BackgroundColor="#282323">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Leaderboards" TextColor="AliceBlue" FontSize="Title" HorizontalTextAlignment="Center"/>
+            
+            <!-- USE A GRID FOR THIS INSTEAD MAYBE -->
+
+            <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="     Name     " FontSize="20" TextColor="AliceBlue"/>
+                    <Label Text="Highest Score     " FontSize="20" TextColor="AliceBlue"/>
+                    <Label Text="Recent Score     " FontSize="20" TextColor="AliceBlue"/>
+                </StackLayout>
+            </StackLayout>
+
+            <ListView x:Name="xml_user_list">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" BackgroundColor="#332F2F">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding name}" FontSize="20" TextColor="AliceBlue"/>
+                                    <Label Text="{Binding score.highest_score}" FontSize="20" TextColor="AliceBlue"/>
+                                    <Label Text="{Binding score.recent_score}" FontSize="20" TextColor="AliceBlue"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+            <Button Text="Get Users" WidthRequest="100" TextColor="AliceBlue" BackgroundColor="ForestGreen" Clicked="on_button_get_users"/>
+            <Button Text="Return" WidthRequest="100" TextColor="AliceBlue" BackgroundColor="DarkRed" Clicked="on_button_return"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

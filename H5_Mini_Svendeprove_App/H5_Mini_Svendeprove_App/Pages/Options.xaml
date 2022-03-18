@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="H5_Mini_Svendeprove_App.Pages.Options"
+             BackgroundColor="#282323">
+    
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Label Text="Options" TextColor="AliceBlue" FontSize="Title" Margin="0, 30, 0, 0" HorizontalTextAlignment="Center"/>
+            <Label Text="Name" TextColor="AliceBlue" FontSize="20" HorizontalTextAlignment="Start" FontAttributes="bold"/>
+            <Entry x:Name="Label_Name" Placeholder="" Text="" BackgroundColor="AliceBlue" FontAttributes="Bold" FontSize="Large" HorizontalTextAlignment="Center"/>
+            <Label Text="Your name can only contain characters from a-z, A-Z, 0-9 and can max contain 12 characters including spaces" TextColor="#D2CFCF" FontSize="Small" HorizontalTextAlignment="Center"/>
+            
+            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                <Button Text="Return" WidthRequest="100" TextColor="AliceBlue" BackgroundColor="#C22E2E" HorizontalOptions="CenterAndExpand" Clicked="on_button_return"/>
+                <Button Text="Confirm" WidthRequest="100" TextColor="AliceBlue" BackgroundColor="ForestGreen" HorizontalOptions="CenterAndExpand" Clicked="on_button_confirm"/>
+            </StackLayout>
+            
+            <StackLayout VerticalOptions="End">
+                <Label Text="Delete User" TextColor="AliceBlue" FontSize="20" Margin="0, 0, 0, 20" HorizontalTextAlignment="Center" FontAttributes="bold"/>
+                <Button Text="DELETE USER" WidthRequest="130" TextColor="AliceBlue" BackgroundColor="DarkRed" HorizontalOptions="CenterAndExpand" Margin="0, 0, 0, 50" Clicked="on_button_delete"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

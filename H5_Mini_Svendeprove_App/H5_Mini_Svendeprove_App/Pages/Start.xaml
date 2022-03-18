@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="H5_Mini_Svendeprove_App.Pages.Start"
+             BackgroundColor="#282323">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="PAY ATTENTION TO YOUR NODEMCU" TextColor="AliceBlue" FontSize="40" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

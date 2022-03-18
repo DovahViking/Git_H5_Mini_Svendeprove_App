@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="H5_Mini_Svendeprove_App.Pages.Home"
+             BackgroundColor="#282323">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Dovah Light Game" TextColor="AliceBlue" FontSize="40" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Label x:Name="Label_User" Text="" TextColor="AliceBlue" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Button Text="Start" WidthRequest="100" TextColor="AliceBlue" BackgroundColor="DarkRed" Clicked="on_button_start"/>
+            <Button Text="Leaderboards" WidthRequest="100" TextColor="AliceBlue" BackgroundColor="DarkRed" Clicked="on_button_leaderboards"/>
+            <Button Text="Options" WidthRequest="100" TextColor="AliceBlue" BackgroundColor="DarkRed" Clicked="on_button_options"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
