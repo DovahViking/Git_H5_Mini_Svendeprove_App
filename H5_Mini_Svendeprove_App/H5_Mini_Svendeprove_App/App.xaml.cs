@@ -9,7 +9,7 @@ namespace H5_Mini_Svendeprove_App
     public partial class App : Application
     {
         public static HttpClient client = new HttpClient();
-        public static string path = "https://192.168.1.192:6969/api/User_"; //"https://192.168.10.245:6969/api/User_";
+        public static string path = "https://192.168.10.245:6969/api/User_";
 
         public App()
         {
