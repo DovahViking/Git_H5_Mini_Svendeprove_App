@@ -3,10 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="H5_Mini_Svendeprove_App.Pages.Start"
              BackgroundColor="#282323">
-    
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="PAY ATTENTION TO YOUR NODEMCU" TextColor="AliceBlue" FontSize="40" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Label Text="PAY ATTENTION TO YOUR NODEMCU" TextColor="AliceBlue" FontSize="40" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="0, 50, 0, 0"/>
+            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+
+            </StackLayout>
+
+            <StackLayout VerticalOptions="End">
+                <Button Text="OK" WidthRequest="100" TextColor="AliceBlue" BackgroundColor="ForestGreen" HorizontalOptions="CenterAndExpand" Margin="0, 0, 0, 80" Clicked="on_button_ok"/>
+            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
